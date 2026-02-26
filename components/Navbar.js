@@ -91,7 +91,7 @@ export const Navbar = () => {
             <Stack direction={'row'} spacing={8}>
               {NAV_ITEMS.map(navItem => (
                 <CustomButton
-                  key={Math.floor(Math.random() * 100)}
+                  key={navItem.label}
                   href={navItem.href}
                   label={navItem.label}
                 />
@@ -159,7 +159,7 @@ export const Navbar = () => {
         {NAV_ITEMS.map(navItem => (
           <Stack
             as={motion.div}
-            key={Math.floor(Math.random() * 100)}
+            key={navItem.label}
             spacing={4}
             variants={mobileMenuItemVariants}
             onClick={onToggle}
