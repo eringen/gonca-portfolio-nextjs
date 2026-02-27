@@ -70,15 +70,13 @@ export const Navbar = () => {
           justify={{ base: 'center', md: 'start' }}
           align={'center'}
         >
-          <NextLink href="/" legacyBehavior>
-            <a>
-              <ChakraNextImage
-                src={'/images/logo.svg'}
-                width={50}
-                height={50}
-                alt="logo"
-              />
-            </a>
+          <NextLink href="/">
+            <ChakraNextImage
+              src={'/images/logo.svg'}
+              width={50}
+              height={50}
+              alt="logo"
+            />
           </NextLink>
 
           <Flex
